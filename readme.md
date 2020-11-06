@@ -36,5 +36,5 @@ const toSpan = (selector, wordToSurround, spanClass) => {
 
     elt.innerHTML = parts.join(" ");
 }
-toSpan("h1.h1", "Bretonne", "spanTitle");
+toSpan("h1.h1", "word to surround", "class to add");
 ```
