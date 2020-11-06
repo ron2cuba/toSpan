@@ -1,0 +1,1 @@
+# Function to surround `$shop.name` in Prestashop by span
