@@ -1,4 +1,4 @@
-# Function to surround `$shop.name` in Prestashop by span
+# Function to surround a word in `$shop.name` in Prestashop by span
 
 - You can select what you want by the selector in first argument
 - You can select the word to surround in second argument
