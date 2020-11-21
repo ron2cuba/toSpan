@@ -15,15 +15,15 @@ const toSpan = (selector, wordToSurround, spanClass) => {
 
     //pour chaque mot de parts
     parts.forEach((word, index, array)=>{
-        //si eltcontient le wordToSurround
+        //si elt contient le wordToSurround
         if(word == wordToSurround){
             //on prend le mot dans le tableau parts à l'index et on remplace par
             array[index] = `<span class="${spanClass}">${word}</span>`;
         }
     });
-    //joindre les elements html (du tableau parts) dans elm
+    //joindre les elements html (du tableau parts) dans elt
     // console.log(parts);
 
     elt.innerHTML = parts.join(" ");
 }
-toSpan("h1.h1", "Bretonne", "spanTitle");
+toSpan("h1.h1", "mot recherché", "spanTitle");
