@@ -9,7 +9,8 @@ const toSpan = (selector, wordToSurround, spanClass) => {
     let elt = document.querySelector(selector);
     //si elt n'exixte pas on return
     if(!elt) return;
-
+    //on vérifie que le titre est bien en majuscule pour la police
+    elt.innerHTML = elt.innerHTML.toUpperCase();
     // On explode le contenu de l'élément en tableau suivant les espaces
     let parts = elt.innerHTML.split(" ");
 
